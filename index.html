@@ -533,7 +533,7 @@
   <div class="header-nav-bar">
     <img
       id="headerImage"
-      src="https://i.ibb.co/RTMS8q6n/1000022455.jpg"
+      src="https://i.ibb.co/tP8KSTYh/1000075140.jpg"
       alt="Header Image"
     >
   </div>
@@ -541,16 +541,23 @@
 
 
 
+<script>
+  const headerImage = document.getElementById("headerImage");
 
+  const topImg = "https://i.ibb.co/tP8KSTYh/1000075140.jpg";
+  const scrollImg = "https://i.ibb.co/3yGZtgkD/Screenshot-2025-1105-141302.png";
+
+  window.addEventListener("scroll", () => {
+    if (window.scrollY > 20) {
+      headerImage.src = scrollImg;
+    } else {
+      headerImage.src = topImg;
+    }
+  });
+</script>
 
 </body>
 </html>
-
-    <img src="https://i.ibb.co/NnZCXdW3/1000075140.jpg"
-     alt="Edge to Edge Image" 
-     class="full-image">  
-     
-  </div>
   
   
   
